@@ -1,1 +1,520 @@
-/* Acá van tus reglas de estilo */
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none; 
+}
+
+h1{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+main{
+    display: flex;
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 100%;
+    height: 75px;
+}
+
+#fraseIntro{
+  color: blueviolet;
+  letter-spacing: 2pt;
+  font-size: 17px;
+  width: 340px;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+#imagenPrincipal{
+    width: 360px;
+}
+
+#loginForm {
+  width: 220px;
+  height: 250px;
+  background: rgb(148, 141, 214);
+  color: rgb(255, 255, 255);
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.avatar{
+  width: 36%;
+  height: 36%;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(57% - 50px);
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(226, 177, 15);
+    padding-top: 10px;
+}
+
+#loginForm p{
+    font-family: sans-serif;
+    font-weight: bold; 
+    font-size: 14px;
+    color:rgb(71, 73, 73);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#loginForm input{
+    width: 100%;
+}
+
+#loginForm input[type="text"], input[type="password"] {
+  border-bottom: 1px solid #fff;
+  outline: none;
+  height: 17px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+#loginForm input[type="button"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 80px;
+    background: #2e159c;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+#loginForm input[type="button"]:hover
+{
+    cursor: pointer;
+    background: rgb(54, 209, 201);
+    color: #000;
+    opacity: 1;
+}
+
+#welcome{
+    font-family: cursive;
+    font-size: 16px;
+    color: #EE82EE;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+#fraseIntroDos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(92, 58, 146);
+    width: 340px;
+    text-align: center;
+}
+
+.divContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 70%;
+    margin-left: 20px;
+}
+
+#addFeedback{
+    color: #5F9EA0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#textAreaIn{
+    border-color: #231d38;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 3px;
+}
+
+#inputOffset{
+    height: 15px;
+    width: 40px;
+}
+
+#btnEncode {
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 17%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+
+#btnDecode{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 23%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+
+#showFeedback{
+    color: #5F9EA0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    border-bottom-width: 8px;
+    margin-bottom: 8px;
+}
+
+#textAreaOut{
+    border-color: #231d38;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 3px;
+}
+
+#btnClean{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 23%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+
+#btnSend{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 23%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+
+#btnExit{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 20%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+
+#divNoAttempts{
+    display: flex;
+    flex-direction: column;
+}
+
+#phraseNoAttempts{
+    height: 69px;
+    width: 250px;
+    color: firebrick;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+
+#idImgTryAgain{
+    width: 150px;
+    height: 150px;
+    margin-top: 9px;
+    margin-left: 80px;
+}
+
+#footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;       
+} 
+
+@media screen and (min-width: 764px){
+h1{
+        margin-top: 2px;
+        margin-bottom: 2px;
+}
+    
+main{
+        display: flex;
+        flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+header img{
+    width: 100%;
+    height: 150px;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none; 
+}
+
+#fraseIntro{
+      color: blueviolet;
+      letter-spacing: 2pt;
+      font-size: 25px;
+      width: 300px;
+      position: absolute;
+      top: 150px;
+      left: 800px;
+}
+
+#imagenPrincipal{
+    float: left;
+    margin-right: 50px;
+    margin-top: -20px;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 100%;
+}
+
+#loginForm {
+    width: 320px;
+    height: 350px;
+    background: rgb(148, 141, 214);
+    color: rgb(255, 255, 255);
+    top: 68%;
+    left: 66%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 70px 40px;
+}
+
+.avatar{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: -50px;
+      left: calc(50% - 50px);
+}
+
+h2{
+    margin: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(6, 118, 133)
+}  
+
+#loginForm p{
+    font-family: sans-serif;
+    font-weight: bold; 
+    font-size: 17px;
+    color:rgb(71, 73, 73);
+}
+  
+#loginForm input{
+      width: 100%;
+}
+
+#loginForm input[type="text"], input[type="password"] {
+    border-bottom: 1px solid #fff;
+    outline: none;
+    height: 17px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+  
+#loginForm input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 90px;
+    background: #2e159c;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+}
+  
+#loginForm input[type="button"]:hover
+{
+    cursor: pointer;
+    background: rgb(54, 209, 201);
+    color: #000;
+    opacity: 1;
+}
+
+#welcome{
+      font-family: cursive;
+      font-size: 20px;
+      color: #EE82EE;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      margin-left: 10px;
+}
+
+#fraseIntroDos{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: rgb(92, 58, 146);
+      width: 100%;
+      text-align: center;
+}
+
+.divContainer{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+}
+
+#addFeedback{
+    color: #5F9EA0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+#textAreaIn{
+    border-color: #231d38;
+    width: 330px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+  
+#inputOffset{
+    height: 15px;
+    width: 50px;
+}
+  
+#btnEncode {
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 20%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+
+#btnDecode{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 25%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+  
+#showFeedback{
+    color: #5F9EA0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textAreaOut{
+    border-color: #231d38;
+    width: 330px;
+    height: 150px;
+    margin-bottom: 10px;
+}  
+
+#btnClean{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 20%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+  
+#btnSend{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 20%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+  
+#btnExit{
+    font-family: cursive;
+    color: #5F9EA0;
+    font-weight: bold;
+    width: 20%;
+    padding: 5px;
+    border: #4682B4 1px solid;
+    border-radius: 20px;
+}
+
+#footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;        
+} 
+
+#divNoAttempts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#phraseNoAttempts{
+    height: 69px;
+    width: 250px;
+    color: firebrick;
+    font-size: 20px
+}
+
+#idImgTryAgain{
+    width: 150px;
+    height: 150px;
+    margin-top: 9px;
+} 
+
+}
+

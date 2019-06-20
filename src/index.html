@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ventaja Profesional</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header><img src="../images/VentajaProfesional.png" alt=""></header>
+  <main>
+    <h1></h1><br>
+    <div id="divLoginInbox">
+      <p id="fraseIntro">En este espacio podrás cifrar y descifrar todo tipo de texto.</p>
+      <img src="../images/imagen princ.jpg" id="imagenPrincipal" />
+      <form id="loginForm">
+        <h2>Ingresa aqui:</h2>
+        <img src="./../images/profile-user.png" class="avatar">
+        <p>Usuario</p>
+        <input id="getUsername" type="text" placeholder="&#128113;| Ingrese Usuario">
+        <p>Contraseña</p>
+        <input id="getPassword" type="password" placeholder="&#128272;| Ingrese Contraseña"><br><br>
+        <input id="Ingresar" type="button" value="Ingresar">
+      </form>
+    </div>
+
+    <div id="divTransform">
+      <p id="welcome">Bienvenida</p>
+      <p id="fraseIntroDos">Ahora podrás conocer el feedback que necesitas
+        para mejorar tus habilidades de una manera rapida,
+        sencilla y gratuita.
+
+        Escribe tu feedback, elije el desplazamiento que gustes;
+        luego, elije cifrar o descifrar y ¡listo!
+        ¡Empecemos!</p>
+      <div class="divContainer">
+        <div class="classTextAreaIn">
+        <p id="addFeedback">Ingresa tu feedback aqui:</p>
+          <textarea id="textAreaIn" placeholder="Ingresa tu texto aqui..."></textarea><br>
+          <label>Desplazamiento:</label>
+          <input id="inputOffset" type="number" placeholder="1" step="1" min="-100" max="100">
+          <input id="btnEncode" type="button" value="Cifrar">
+          <input id="btnDecode" type="button" value="Descifrar">
+        </div>
+
+        <div class="classTextAreaOut">
+          <p id="showFeedback">Tu feedback final es:</p>
+          <textarea disabled id="textAreaOut" placeholder="Tu mensaje final es:"></textarea><br>
+          <input id="btnClean" type="button" value="Limpiar">
+          <input id="btnSend" type="button" value="Enviar">
+          <input id="btnExit" type="button" value="Salir"><br>
+        </div>
+      </div>
+    </div>
+
+    <div id="divNoAttempts" class="hidden">
+      <p id="phraseNoAttempts">Ya utilizaste todos tus intentos, en este momento no podrás ingresar.</p>
+      <img src="./../images/tryAgain.jpg" id="idImgTryAgain">
+    </div>
+
+  </main>
+
+  <footer id="footer">
+    <span style="text-decoration:underline rgb(28, 38, 177)">&#169; 2019 - by Alejandra Visa - en Laboratoria </span>
+  </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
